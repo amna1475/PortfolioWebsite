@@ -1,154 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bags Emporium Showcase</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bags Emporium - WordPress Project Showcase</title>
+  <meta name="description" content="Bags Emporium - A complete WordPress e-commerce showcase with product categories, user accounts, SEO, and mobile optimization."/>
+  <meta name="keywords" content="WordPress, WooCommerce, E-commerce, Bags Emporium, Amna Bibi, Mah Noor, SEO, Pantheon Hosting"/>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
 
-    /* Global Styles */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f7fa;
-  color: #333;
-  margin: 0;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
-}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
 
-/* Project Card Styling */
-.project-card {
-  background: #fff;
-  max-width: 900px;
-  width: 100%;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.project-card:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.project-card h2 {
-  margin-top: 0;
-  color: #2c3e50;
-}
-
-.project-card p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/* Feature List */
-.project-card ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 20px 0;
-}
-
-.project-card li {
-  background: #ecf0f1;
-  padding: 10px 15px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  font-size: 15px;
-}
-/* Project Images Section */
-.project-images {
-  margin-top: 30px;
-}
-
-.project-images h2 {
-  font-size: 18px;
-  color: #2c3e50;
-  margin: 30px 0 15px;
-}
-
-/* Image Grid Wrapper */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-/* Image Styling */
-.project-images img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
-}
-
-.project-images img:hover {
-  transform: scale(1.03);
-}
-
-
-/* Note Styling */
-.project-card em {
-  display: block;
-  margin-top: 20px;
-  color: #7f8c8d;
-  font-size: 14px;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .project-card {
-    padding: 20px;
-  }
-
-  .project-card h2 {
-    font-size: 20px;
-  }
-
-  .project-images h2 {
-    font-size: 16px;
-  }
-}
-
+    .card b{
+        padding: 5px;
+        background-color: #2ca6ac;
+        color: white;
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
     
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+
+    h2{
+        background-color: #2ca6ac;
+        color: white;
+        text-align: center;
+    }
+    header {
+      background-color: #2ca6ac;
+      color: #204851;
+      text-align: center;
+      padding: 5px 5px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    section {
+      background-color: #fff;
+      margin: 20px;
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .links ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 15px;
+    }
+
+    .links li {
+      margin: 10px 0;
+    }
+
+    .links a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2ca6ac;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <div class="project-card">
-    <h2>🛍️ Bags Emporium</h2>
-    <p>This was a fully functional e-commerce store built using WordPress, Elementor, and WooCommerce. It featured dynamic product pages, cart functionality, and responsive design.</p>
-    
-    <ul>
-      <li>✅ Built with: WordPress + WooCommerce</li>
-      <li>📦 Free hosting and domain (expired)</li>
-      <li>📱 Fully responsive and user-friendly</li>
-    </ul>
+  <header>
+    <div class="container">
+        
+      <h1>Bags Emporium</h1>
+      <p>E-Commerce Website (WordPress)</p>
+    </div>
+  </header>
 
-    <div class="project-images">
-  <h2>Logo of website</h2>
-  <div class="image-grid">
-    <img src="logo.PNG" alt="Logo">
-  </div>
+  <section class="intro" aria-label="Project Overview">
+    <div class="container">
+      <h2>Project Overview</h2>
+      <p>
+        A fully functional e-commerce platform built using WordPress and WooCommerce, allowing customers to shop, sign up, checkout securely, and explore bag categories. Hosted on Pantheon, optimized for SEO, and integrated with marketing strategies like email campaigns and Google Analytics.
+      </p>
+    </div>
+  </section>
 
-  <h2>Advertisement screenshots</h2>
-  <div class="image-grid">
-    <img src="Bags Emporium.png" alt="Advertisement screenshot" />
-    <img src="@bagsemporium.com.png" alt="advertisement2">
-  </div>
+  <section class="skills" aria-label="Skills Showcased">
+    <div class="container">
+      <h2>Skills Showcased</h2>
+      <ul>
+        <li>WordPress & WooCommerce</li>
+        <li>Theme Customization</li>
+        <li>Plugin Integration</li>
+        <li>Search Engine Optimization (SEO)</li>
+        <li>Digital Marketing (Email, Social, SEO)</li>
+        <li>Responsive Design</li>
+        <li>Hosting with Pantheon</li>
+        <li>User Account Management</li>
+      </ul>
+    </div>
+  </section>
 
-  <h2>All pages screenshots</h2>
-  <div class="image-grid">
-    <img src="images/store-products.png" alt="Product page screenshot" />
-    <img src="images/store-cart.png" alt="Cart page screenshot" />
+  <section class="screenshots" aria-label="Screenshots and Features">
+    <div class="container">
+      <h2>Website Pages & Features</h2>
+      <div class="gallery">
+        
+        <div class="card">
+            <b>Website Logo</b>
+          <img src="logo.PNG" alt="Website Logo" loading="lazy" />
+        </div>
+        <div class="card" onclick="toggleGallery(this)">
+  <b>Interactive Homepage</b>
+  <div class="card">
+    <img src="HomePage.jpg" alt="Homepage View" loading="lazy" />    
   </div>
 </div>
 
+        <div class="card">
+            <b>Product Categories</b>
+          <img src="productNav.jpg" alt="Product Categories" loading="lazy" />
+          
+        </div>
 
-    <p><em>Note: Live link has expired, but here are screenshots of the project.</em></p>
-  </div>
+        <div class="card">
+           <b>Login</b>
+          <img src="login.jpg" alt="Login Page" loading="lazy" /> 
+        </div>
+
+        <div class="card">
+           <b>Signup Page</b>
+          <img src="signup.jpg" alt="Signup Page" loading="lazy" />         
+        </div>
+
+        <div class="card">
+            <b>Cart & Checkout</b>
+          <img src="cart.jpg" alt="Shopping Cart Page" loading="lazy" />
+          
+        </div>
+        <div class="card">
+            <b>Product Details</b>
+          <img src="productPage.jpg" alt="Product Page" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <section class="links" aria-label="External Project Links">
+    <div class="container">
+      <h2>Live Project Links</h2>
+      <ul>
+        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61560066260772" target="_blank" rel="noopener">Facebook Page</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/bags._.emporiium" target="_blank" rel="noopener">@bags._.emporiium</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Bags Emporium | Created by Amna Bibi & Mah Noor Fatima</p>
+  </footer>
 
 </body>
 </html>
