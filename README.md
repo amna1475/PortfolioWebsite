@@ -33,10 +33,13 @@ PortfolioWebsite/
 │ └── style.css
 
 ├── images/
+
 │ └── (project images, logo, etc.)
 
 ├── js/
+
 │ └── script.js (if applicable)
+
 └── README.md
 
 ## 💡 How to Use
@@ -47,10 +50,5 @@ git clone https://github.com/yourusername/portfolio-website.git
 cd portfolio-website
 start index.html
 Or host it on GitHub Pages to make it live!
-
-
 Thank you for visiting! Feel free to fork, star ⭐, or open issues if you have feedback or suggestions.
 
-yaml
-Copy
-Edit
