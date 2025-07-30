@@ -14,11 +14,6 @@ This portfolio was built from scratch using **HTML**, **CSS**, and **JavaScript*
 - 🔹 Clean and responsive layout
 - 🔹 Optimized for both desktop and mobile devices
 
-## 📸 Preview
-
-![Homepage Screenshot](screenshots/homepage.png)  
-_Add more screenshots in the `/screenshots` folder if needed._
-
 ## 🛠️ Built With
 
 - HTML5
